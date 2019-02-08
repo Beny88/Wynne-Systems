@@ -11,7 +11,7 @@ public abstract class Concept
                         throw new NullPointerException( "id must not be null" );
                 }
 
-                id = anId;
+                this.id = anId;
         }
 
         public String getId()
@@ -19,20 +19,20 @@ public abstract class Concept
                 return id;
         }
 
-        public void setId( final String id )
+        public void setId(final String id)
         {
-                id = id;
+                this.id = id;
         }
 
-        @override
-        public boolean equals( Object other )
+        @Override
+        public boolean equals(Object other)
         {
-                return other != null &&
-                        other.getClass().equals( getClass() ) &&
-                        id.equals( ( (Concept) other ).id );
+               return other != null &&
+                       other.getClass().equals(getClass()) &&
+                       id.equals(((Concept)other).id );
         }
 
-        @override
+        @Override
         public String toString()
         {
                 return "Concept(" + id + ")";

@@ -16,7 +16,7 @@ public class ConceptA extends Concept
         return parent;
     }
 
-    @override
+    @Override
     public String toString()
     {
         return "ConceptA{" + getId() + ", parent=" + parent + '}';

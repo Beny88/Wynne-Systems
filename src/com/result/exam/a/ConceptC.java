@@ -23,7 +23,7 @@ public class ConceptC extends ConceptA
         return serialNo;
     }
 
-    @override
+    @Override
     public String toString()
     {
         return "ConceptC(" + getId() + ", " + serialNo + ")";

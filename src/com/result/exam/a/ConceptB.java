@@ -68,7 +68,7 @@ public class ConceptB extends ConceptA
         return count;
     }
 
-    @override
+    @Override
     public String toString()
     {
         return "ConceptB{" + getId() + ", parent=" + getParent() + ", children=" + children.size() + "}";
